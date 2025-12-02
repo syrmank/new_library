@@ -1,10 +1,19 @@
-from src.models import Book
+import sys
+import os
 
-title1 = "Название книги ну очень длинное, оооочень"
-author1 = "Автор1"
-
-
-book1 = Book(title1, author1, 1991, "978-5-17-080077-7")
-print(book1)
-book2 = Book(title2, author2, 1992, "978-5-17-080077-2")
-print(book2)
+if __name__ == "__main__":
+    library = Library("Городская библиотека")
+    
+    # Добавляем книги
+    library.add_book("1984", "Джордж Оруэлл", 1949)
+    library.add_book("Мастер и Маргарита", "Михаил Булгаков", 1966)
+    library.add_book("Преступление и наказание", "Фёдор Достоевский", 1866)
+    
+    # Работа с книгами
+    print(library.borrow_book("1984", "Анна"))
+    print(library.borrow_book("Мастер и Маргарита", "Борис"))
+    print(library.return_book("1984", "Анна"))
+    
+    # Пробуем ошибочные сценарии
+    print(library.borrow_book("Несуществующая книга", "Анна"))
+    print(library.return_book("1984", "Несуществующий пользователь"))
