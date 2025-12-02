@@ -16,3 +16,10 @@ class Book:
             return f"Книга '{self.title}' выдана"
         else:
             return f"Выдача книги '{self.title}' невозможна!"
+        
+    def return_book(self) -> str:
+        if not self.is_available:
+            self.is_available = True
+            return f"Книга '{self.title}' возвращена"
+        else:
+            return f"Возврат книги '{self.title}' невозможен!"
