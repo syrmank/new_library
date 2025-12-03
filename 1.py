@@ -1,1 +1,2 @@
-ptint("2")
+print("1asdgfasdg")
+print("7")
