@@ -1,6 +1,6 @@
 print("1asdgfasdg")
-print("sVDvawcav")
-print("7asdasdcasd")
+print("")
+print("")
 print("awvdadasd")
 print("7wadvaw")
 print("70")
