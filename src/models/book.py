@@ -23,3 +23,4 @@ class Book:
             return f"Книга '{self.title}' возвращена"
         else:
             return f"Возврат книги '{self.title}' невозможен!"
+        
