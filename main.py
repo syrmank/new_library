@@ -3,7 +3,7 @@ import os
 
 if __name__ == "__main__":
     library = Library("Городская библиотека")
-    
+    new_code = 112
     # Добавляем книги
     library.add_book("1984", "Джордж Оруэлл", 1949)
     library.add_book("Мастер и Маргарита", "Михаил Булгаков", 1966)
