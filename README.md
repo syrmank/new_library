@@ -1,5 +1,0 @@
-﻿## 1. Команды для клонирования репозитория у MarkНЕDown
-git clone https://github.com/syrmank/new_library
-cd new_library
-## 2. Команды для запуска тестов
-python -m "Название файла"
