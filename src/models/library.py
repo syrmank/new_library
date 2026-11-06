@@ -3,6 +3,9 @@ class Library:
     def __init__(self, name):
         self.name = name
         self.books = []
+
+    def get_sorted_by_year(reverse=False) -> list[Book]:
+        return sorted(self.books, key=lambda b: b.year)
     
     def add_book(self, title, author):
         """Добавить книгу"""
