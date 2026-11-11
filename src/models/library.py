@@ -29,6 +29,9 @@ class Library:
             return True
         return False
 
+    def find_by_author(author: str) -> list[Book]:
+        return [book for book in self.books if book.author == author]
+      
     def get_sorted_by_year(self, books, reverse=False) -> list[Book]:
         sorted_list = sorted(books, key=lambda x: x.year, reverse=reverse)
         return sorted_list
