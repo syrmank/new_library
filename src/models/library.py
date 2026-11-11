@@ -13,6 +13,7 @@ class Library:
         return book
 
     def find_by_title(self, title):
+
         """Найти книгу"""
         for book in self.books:
             if book.title.lower() == title.lower():
@@ -28,3 +29,10 @@ class Library:
         if book.borrow():
             return True
         return False
+
+    def find_by_author(author: str) -> list[Book]:
+        return [book for book in self.books if book.author == author]
+      
+    def get_sorted_by_year(self, books, reverse=False) -> list[Book]:
+        sorted_list = sorted(books, key=lambda x: x.year, reverse=reverse)
+        return sorted_list
