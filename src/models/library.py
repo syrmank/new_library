@@ -12,10 +12,11 @@ class Library:
         self.books.append(book)
         return book
 
-    def find_book(self, title):
+    def find_by_title(self, title):
+
         """Найти книгу"""
         for book in self.books:
-            if book.title == title:
+            if book.title.lower() == title.lower():
                 return book
         return None
 
